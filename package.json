@@ -1,0 +1,23 @@
+{
+  "name": "natours-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atharvakutwal2002/Natours.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atharvakutwal2002/Natours/issues"
+  },
+  "homepage": "https://github.com/atharvakutwal2002/Natours#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
