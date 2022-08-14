@@ -7,13 +7,14 @@ const userRouter = require('./routes/userRoutes');
 
 app.use(express.json());
 
+console.log(process.env.NODE_ENV)
 //middleware
-app.use(morgan('dev'));
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'));
+}
 
 app.use('/api/v1/tours', tourRouter);
 
 app.use('/api/v1/users', userRouter);
 
-
-
-module.exports=app;
+module.exports = app;
