@@ -1,7 +1,11 @@
 const express = require('express');
 const fs = require('fs');
+const { route } = require('../app');
 const router = express.Router();
 const userController = require('./../controllers/userController');
+const authController = require('./../controllers/authController');
+
+router.post('/signup', authController.signup);
 
 router
   .route('/')
